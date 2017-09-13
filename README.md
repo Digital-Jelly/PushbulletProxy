@@ -23,6 +23,8 @@ using the format of the JSON provided in the task:
 
 It should be noted all users added will only be available for the uptime of the server. The users collection is held in memory, as a list. Users must have a non-empty username, must not have a duplicate username, and an accessToken that is not empty.
 
+A successful 200 response code should be returned, if the user was added successfully.
+
 Task 2:
 
 The collection of current users can be retrieved by submitting a GET request to: 
@@ -56,3 +58,5 @@ The body must take the form:
 }
 
 If no title or body is defined (empty message), then a default is added. This can be changed, obviously.
+
+A successful 200 response code should be returned, if the message was sent successfully.
