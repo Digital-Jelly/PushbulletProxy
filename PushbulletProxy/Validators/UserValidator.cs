@@ -45,6 +45,7 @@ namespace PushbulletProxy.Validators
                 };
             }
 
+            /*
             if (!this.settings.WhitelistedAccessTokens.Contains(user.AccessToken))
             {
                 return new ResponseBase
@@ -52,6 +53,7 @@ namespace PushbulletProxy.Validators
                     Error = new PushbulletUserException("Access token is not allowed", new InvalidOperationException())
                 };
             }
+            */
 
             return new ResponseBase();
         }
