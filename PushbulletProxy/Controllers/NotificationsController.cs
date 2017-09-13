@@ -9,12 +9,12 @@ namespace PushbulletProxy.Controllers
     /// <summary>
     /// Controller for managing operations related to Task 3, in the coding test.
     /// </summary>
-    public class SendController : BaseApiController
+    public class NotificationsController : BaseApiController
     {
         private readonly IUserManager userManager;
         private readonly IPushbulletClient pushbulletClient;
 
-        public SendController(ISettings settings, IUserManager userManager, IPushbulletClient pushbulletClient) : base(settings)
+        public NotificationsController(ISettings settings, IUserManager userManager, IPushbulletClient pushbulletClient) : base(settings)
         {
             this.userManager = userManager;
             this.pushbulletClient = pushbulletClient;

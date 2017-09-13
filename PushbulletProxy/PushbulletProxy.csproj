@@ -100,8 +100,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Bootstrapper\UnityResolver.cs" />
     <Compile Include="Controllers\BaseApiController.cs" />
-    <Compile Include="Controllers\PushbulletController.cs" />
-    <Compile Include="Controllers\SendController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Controllers\NotificationsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -120,7 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PushbulletProxy.Core\PushbulletProxy.Core.csproj">
