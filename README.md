@@ -9,6 +9,7 @@ The code is structured such that the elements can be unit tested, but due to tim
 I have successfully tested the solution such that it satisfies the following:
 
 #Task 1: 
+
 A user can be added by sending a POST request to: http://<DOMAIN>/api/pushbulletproxy/users
 using the format of the JSON provided in the task:
   
@@ -20,6 +21,7 @@ using the format of the JSON provided in the task:
 It should be noted all users added will only be available for the uptime of the server. The users collection is held in memory, as a list. Users must have a non-empty username, and an accessToken that matches a whitelisted collection of accessTokens (and by implication, be noy empty).
 
 #Task 2:
+
 The collection of current users can be retrieved by submitting a GET request to: http://<DOMAIN>/api/pushbulletproxy/users
 This should publish a JSON collection of users such:
 
@@ -34,6 +36,7 @@ This should publish a JSON collection of users such:
 ]
 
 #Task 3: 
+
 A notification can be sent to a user, through pushbullet, by submitting a POST request to: http://<DOMAIN>/api/pushbulletproxy/send
 The body must take the form:
   
