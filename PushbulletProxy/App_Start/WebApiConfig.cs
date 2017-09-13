@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using PushbulletProxy.Bootstrapper;
 using PushbulletProxy.Core;
+using PushbulletProxy.Core.Http;
 using PushbulletProxy.Core.Services;
 using PushbulletProxy.Core.Validators;
 using PushbulletProxy.Services;
@@ -25,6 +26,7 @@ namespace PushbulletProxy
             // Register dependencies
             container.RegisterType<IUserManager, UserManager>(new ContainerControlledLifetimeManager());
             container.RegisterType<IPushbulletClient, PushbulletClient>(new ContainerControlledLifetimeManager());
+            container.RegisterType<IHttpClientFactory, HttpClientFactory>(new ContainerControlledLifetimeManager());
             container.RegisterType<IUserValidator, UserValidator>(new ContainerControlledLifetimeManager());
             container.RegisterType<ISettings, Settings>(new ContainerControlledLifetimeManager());
 

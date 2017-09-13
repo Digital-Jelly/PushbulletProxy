@@ -36,7 +36,7 @@ namespace PushbulletProxy.Services
             // Send the notification
             try
             {
-                client = this.httpClientFactory.Create();
+                client = this.httpClientFactory.Create(user.AccessToken);
 
                 var payload = this.GetPayload(user, message, title);
                 var response = await client.PostAsync(settings.PushbulletApiUrl, payload);
@@ -72,7 +72,7 @@ namespace PushbulletProxy.Services
         {
             var request = new SendPushbulletNotificationRequest
             {
-                Type = "Note",
+                Type = "note",
                 Title = title,
                 Body = message
             };

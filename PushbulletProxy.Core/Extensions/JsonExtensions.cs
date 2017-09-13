@@ -16,7 +16,7 @@ namespace PushbulletProxy.Core.Extensions
 
             try
             {
-                return JsonConvert.SerializeObject(data);
+                return JsonConvert.SerializeObject(data, settings);
             }
             catch
             {

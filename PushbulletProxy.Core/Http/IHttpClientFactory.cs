@@ -4,6 +4,6 @@ namespace PushbulletProxy.Core.Http
 {
     public interface IHttpClientFactory
     {
-        HttpClient Create();
+        HttpClient Create(string accessToken);
     }
 }

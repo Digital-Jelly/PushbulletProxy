@@ -12,11 +12,12 @@ namespace PushbulletProxy.Core.Http
             this.settings = settings;
         }
 
-        public HttpClient Create()
+        public HttpClient Create(string accessToken)
         {
             var httpClient = new HttpClient();
 
             httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            httpClient.DefaultRequestHeaders.Add("Access-token", accessToken);
 
             return httpClient;
         }
