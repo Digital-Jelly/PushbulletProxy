@@ -47,7 +47,7 @@ Task 3:
 
 A notification can be sent to a user, through pushbullet, by submitting a POST request to: 
 
-http://pushbulletproxy.azurewebsites.net/api/pushbulletproxy/send
+http://pushbulletproxy.azurewebsites.net/api/pushbulletproxy/notifications
 
 The body must take the form:
   
