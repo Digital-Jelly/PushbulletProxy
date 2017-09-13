@@ -18,7 +18,7 @@ using the format of the JSON provided in the task:
   "accessToken": "YOUR ACCESS TOKEN"
 }
 
-It should be noted all users added will only be available for the uptime of the server. The users collection is held in memory, as a list. Users must have a non-empty username, and an accessToken that matches a whitelisted collection of accessTokens (and by implication, be noy empty).
+It should be noted all users added will only be available for the uptime of the server. The users collection is held in memory, as a list. Users must have a non-empty username, must not have a duplicate username, and an accessToken that is not empty.
 
 Task 2:
 
