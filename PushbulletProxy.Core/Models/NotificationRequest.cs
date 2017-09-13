@@ -6,5 +6,11 @@ namespace PushbulletProxy.Core.Models
     {
         [JsonProperty(Required = Required.Always)]
         public string Username { get; set; }
+
+        [JsonProperty(Required = Required.Always)]
+        public string Title { get; set; }
+
+        [JsonProperty(Required = Required.Always)]
+        public string Body { get; set; }
     }
 }

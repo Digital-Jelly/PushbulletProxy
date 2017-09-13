@@ -31,9 +31,19 @@ namespace PushbulletProxy.Controllers
                 return BadRequest();
             }
 
+            if (string.IsNullOrEmpty(request.Title))
+            {
+                request.Title = "Title";
+            }
+
+            if (string.IsNullOrEmpty(request.Body))
+            {
+                request.Body = "This is a test";
+            }
+
             // Construct request to push bullet
             var user = userResult.Result;
-            var result = await this.pushbulletClient.SendNotificationAsync(user, "This is a test", "Title");
+            var result = await this.pushbulletClient.SendNotificationAsync(user, request.Body, request.Title);
 
             if (result.IsSuccess)
             {
