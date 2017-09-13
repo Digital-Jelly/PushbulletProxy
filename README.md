@@ -53,10 +53,10 @@ The body must take the form:
   
 {
   "username": "YOUR USERNAME",
-  "title" : "The title",
-  "body" : "The message"
+  "title" : "YOUR TITLE",
+  "body" : "YOUR MESSAGE"
 }
 
 If no title or body is defined (empty message), then a default is added. This can be changed, obviously.
 
-A successful 200 response code should be returned, if the message was sent successfully.
+A successful 200 response code should be returned, if the message was sent successfully. If a username is given that doesn't match a registered user then a 400 is returned.
