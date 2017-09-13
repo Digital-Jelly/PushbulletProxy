@@ -10,7 +10,10 @@ I have successfully tested the solution, using Telerik Fiddler (http://www.teler
 
 Task 1: 
 
-A user can be added by sending a POST request to: http://pushbulletproxy.azurewebsites.net/api/pushbulletproxy/users
+A user can be added by sending a POST request to: 
+
+http://pushbulletproxy.azurewebsites.net/api/pushbulletproxy/users
+
 using the format of the JSON provided in the task:
   
 {
@@ -22,13 +25,16 @@ It should be noted all users added will only be available for the uptime of the 
 
 Task 2:
 
-The collection of current users can be retrieved by submitting a GET request to: http://pushbulletproxy.azurewebsites.net/api/pushbulletproxy/users
+The collection of current users can be retrieved by submitting a GET request to: 
+
+http://pushbulletproxy.azurewebsites.net/api/pushbulletproxy/users
+
 This should publish a JSON collection of users such:
 
 [
 {
-"username": "bbcUser1",
-"accessToken": "anAccessToken",
+"username": "YOUR USERNAME",
+"accessToken": "YOUR ACCESSTOKEN",
 “creationTime”: “2011-02-01T10:30:20”,
 “numOfNotificationsPushed”: 0
 }
@@ -37,9 +43,12 @@ This should publish a JSON collection of users such:
 
 Task 3: 
 
-A notification can be sent to a user, through pushbullet, by submitting a POST request to: http://pushbulletproxy.azurewebsites.net/api/pushbulletproxy/send
+A notification can be sent to a user, through pushbullet, by submitting a POST request to: 
+
+http://pushbulletproxy.azurewebsites.net/api/pushbulletproxy/send
+
 The body must take the form:
   
 {
-  "username": "bbcUser1"
+  "username": "YOUR USERNAME"
 }
