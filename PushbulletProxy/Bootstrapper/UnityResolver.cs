@@ -6,7 +6,7 @@ using System.Web.Http.Dependencies;
 namespace PushbulletProxy.Bootstrapper
 {
     /// <summary>
-    /// Boilerplate code for the dependency injection with Unity
+    /// Boilerplate code for dependency injection with Unity
     /// From: https://docs.microsoft.com/en-us/aspnet/web-api/overview/advanced/dependency-injection
     /// </summary>
     public class UnityResolver : IDependencyResolver

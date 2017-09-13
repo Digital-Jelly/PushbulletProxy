@@ -8,9 +8,6 @@ using PushbulletProxy.Core.Services;
 using PushbulletProxy.Core.Validators;
 using PushbulletProxy.Services;
 using PushbulletProxy.Validators;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http.Headers;
 using System.Web.Http;
 

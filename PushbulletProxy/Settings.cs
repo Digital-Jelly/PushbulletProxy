@@ -1,8 +1,5 @@
 ﻿using PushbulletProxy.Core;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace PushbulletProxy
 {
@@ -12,7 +9,7 @@ namespace PushbulletProxy
     public class Settings : ISettings
     {
         /// <summary>
-        /// The allowed access tokens for pushbullet, and for registering users.
+        /// The allowed access tokens for pushbullet, and for registering users. DEPRECATED
         /// </summary>
         public List<string> WhitelistedAccessTokens
         {

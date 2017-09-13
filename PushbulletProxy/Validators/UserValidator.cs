@@ -1,8 +1,8 @@
-﻿using PushbulletProxy.Core.Validators;
-using System;
-using PushbulletProxy.Core;
-using PushbulletProxy.Core.Models;
+﻿using PushbulletProxy.Core;
 using PushbulletProxy.Core.ErrorHandling;
+using PushbulletProxy.Core.Models;
+using PushbulletProxy.Core.Validators;
+using System;
 
 namespace PushbulletProxy.Validators
 {

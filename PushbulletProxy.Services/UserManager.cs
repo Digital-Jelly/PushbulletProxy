@@ -1,11 +1,11 @@
-﻿using PushbulletProxy.Core.Services;
+﻿using PushbulletProxy.Core;
+using PushbulletProxy.Core.ErrorHandling;
+using PushbulletProxy.Core.Models;
+using PushbulletProxy.Core.Services;
+using PushbulletProxy.Core.Validators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using PushbulletProxy.Core;
-using PushbulletProxy.Core.Models;
-using PushbulletProxy.Core.Validators;
-using PushbulletProxy.Core.ErrorHandling;
 
 namespace PushbulletProxy.Services
 {

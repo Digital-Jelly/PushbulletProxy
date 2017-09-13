@@ -1,13 +1,13 @@
-﻿using PushbulletProxy.Core.Services;
-using System;
-using PushbulletProxy.Core;
-using PushbulletProxy.Core.Models;
-using System.Threading.Tasks;
-using System.Net.Http;
-using PushbulletProxy.Core.Http;
-using PushbulletProxy.Core.Extensions;
-using System.Text;
+﻿using PushbulletProxy.Core;
 using PushbulletProxy.Core.ErrorHandling;
+using PushbulletProxy.Core.Extensions;
+using PushbulletProxy.Core.Http;
+using PushbulletProxy.Core.Models;
+using PushbulletProxy.Core.Services;
+using System;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace PushbulletProxy.Services
 {
